@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://b8h5qd4d4bcbp"]
+[gd_scene load_steps=4 format=3 uid="uid://b8h5qd4d4bcbp"]
 
 [ext_resource type="Texture2D" uid="uid://d13m0ln8av1d6" path="res://Assets/h.jpg" id="1_hp3ed"]
-[ext_resource type="Script" path="res://Scripts/NodeTutorial.cs" id="2_k74k3"]
 [ext_resource type="Script" path="res://Scripts/Movement.cs" id="2_nbwic"]
 [ext_resource type="Texture2D" uid="uid://cpjkbygitcawk" path="res://icon.svg" id="3_v7xud"]
 
@@ -16,9 +15,8 @@ script = ExtResource("2_nbwic")
 xVal = 5.0
 yVal = 5.0
 
-[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+[node name="balls" type="Sprite2D" parent="Sprite2D"]
 position = Vector2(-2126.44, 543.331)
 rotation = 2.34276
 scale = Vector2(1.24418, 3.90732)
 texture = ExtResource("3_v7xud")
-script = ExtResource("2_k74k3")

@@ -8,9 +8,12 @@ public partial class Movement : Sprite2D
 //[Export] with add these values into the hierarchy
 	[Export] public float xVal; 
 	[Export] public float yVal;
+
+	Godot.Sprite2D sprite;
 	
 	public override void _Ready()
 	{
+		sprite = GetNode<Godot.Sprite2D>("balls");
 	}
 
 	
@@ -19,6 +22,7 @@ public partial class Movement : Sprite2D
 		if(Input.IsKeyPressed(Key.W))
 		{
 			this.Position += new Vector2(0,-yVal);
+			sprite.GlobalPosition = new Vector2(0,0);
 			Debug.Print("W is pressed");
 		}
 		if(Input.IsKeyPressed(Key.S))
